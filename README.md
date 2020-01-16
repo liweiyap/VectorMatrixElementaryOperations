@@ -2,6 +2,20 @@
 
 This is a simple and small library containing my own hard-coded implementations of row vectors, column vectors, and matrices. All these three classes are derived from a base vector class, which is designed to be an abstract class. 
 
+The following operations are supported:
+* Addition and subtraction of row vectors.
+* Addition and subtraction of column vectors.
+* Addition and subtraction of matrices.
+* Negation of row vectors, column vectors, and matrices.
+* Scalar multiplication and division of row vectors.
+* Scalar multiplication and division of column vectors.
+* Scalar multiplication and division of matrices.
+* Multiplication of a row vector with a column vector, yielding a scalar.
+* Multiplication of a column vector with a row vector, yielding a matrix.
+* Multiplication of a row vector with a matrix, yielding a row vector.
+* Multiplication of a matrix with a column vector, yielding a column vector.
+* Matrix-matrix multiplication.
+
 Only the following C++ data types are supported thus far:  `int`, `float`, and `double`.
 
 ## Compilation
