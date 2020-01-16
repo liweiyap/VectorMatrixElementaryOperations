@@ -1,6 +1,6 @@
 ## General Information
 
-This is a simple and small library containing my own hard-coded implementations of row vectors, column vectors, and matrices. All these three classes are derived from a base vector class, which is designed to be an abstract class. 
+This is a simple and small library containing my own implementations of row vectors, column vectors, and matrices. All these three classes are derived from a base vector class, which is designed to be an abstract class. 
 
 The following operations are supported:
 * Addition and subtraction of row vectors.
