@@ -1,6 +1,6 @@
 ## General Information
 
-This is a simple and small library containing my own implementations of row vectors, column vectors, and matrices. All these three classes are derived from a base vector class, which is designed to be an abstract class. 
+This is a simple and small library containing my own implementations of row vectors ([`myRowVector<T>`](https://github.com/liweiyap/VectorMatrixElementaryOperations/blob/master/headers/myRowVector.hpp)), column vectors ([`myColumnVector<T>`](https://github.com/liweiyap/VectorMatrixElementaryOperations/blob/master/headers/myColumnVector.hpp)), and matrices ([`myMatrix<T>`](https://github.com/liweiyap/VectorMatrixElementaryOperations/blob/master/headers/myMatrix.hpp)) for a given C++ data type `T`. All these three classes are derived from a base vector class ([`myVector<T>`](https://github.com/liweiyap/VectorMatrixElementaryOperations/blob/master/headers/myVector.hpp)), which is designed to be an abstract class. 
 
 The following operations are supported:
 * Addition and subtraction of row vectors.
@@ -16,7 +16,7 @@ The following operations are supported:
 * Multiplication of a matrix with a column vector, yielding a column vector.
 * Matrix-matrix multiplication.
 
-Only the following C++ data types are supported thus far:  `int`, `float`, and `double`.
+Only the following data types for `T` are supported thus far:  `int`, `float`, and `double`.
 
 ## Compilation
 

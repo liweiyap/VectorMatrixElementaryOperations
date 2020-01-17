@@ -183,7 +183,7 @@ myMatrix<T> operator* (const myMatrix<T>& Mat1, const myMatrix<T>& Mat2)
         return A1;
     }
     
-    // following algorithm taken from Wikipedia for optimisation (https://en.wikipedia.org/wiki/Matrix_multiplication_algorithm#Non-square_matrices)
+    // following divide-and-conquer algorithm taken from Wikipedia for optimisation (https://en.wikipedia.org/wiki/Matrix_multiplication_algorithm#Non-square_matrices)
     if (max == Mat1.nrows())
     {
         A1 = Mat1.block(0, 0, Mat1.nrows()/2, Mat1.ncols());
@@ -347,7 +347,7 @@ myMatrix<T>& myMatrix<T>::concatenateHoriz(const myMatrix<T>& otherMat)
 }
 
 template <typename T>
-T myMatrix<T>::getValue(const size_t rowIdx, const size_t colIdx)
+T myMatrix<T>::getValue(const size_t rowIdx, const size_t colIdx) const
 {
     if(rowIdx >= myRows || colIdx >= myCols)
     {

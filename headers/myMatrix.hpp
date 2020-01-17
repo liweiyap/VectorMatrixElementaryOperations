@@ -53,7 +53,7 @@ public:
     myMatrix<T> concatenateHoriz(const myMatrix<T>& Mat1, const myMatrix<T>& Mat2);
     myMatrix<T>& concatenateHoriz(const myMatrix<T>& otherMat);
     
-    T getValue(const size_t rowIdx, const size_t colIdx);
+    T getValue(const size_t rowIdx, const size_t colIdx) const;
     void setValue(const size_t rowIdx, const size_t colIdx, const T val);
     
     size_t nrows() const;
